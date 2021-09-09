@@ -1,0 +1,92 @@
+.header-banner {
+	color: $nearblack;
+	@media only screen and (max-width: 575.98px) {
+		.header-banner-title {
+			position: relative;
+			padding: 5% 10%;
+			margin: 0 0 50px 0;
+
+			.learn-anytime-anywhere {
+				font-size: 25px;
+			}
+
+			.at-hapolearn {
+				font-size: 25px;
+				-webkit-text-stroke-width: 2px;
+			}
+
+			.description {
+				font-size: 15px;
+			}
+
+			.start-learning {
+				font-size: 15px;
+				display: inline-block;
+				width: 100%;
+				padding: 10px 0;
+				text-align: center;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+		.header-banner-title {
+			position: absolute;
+			top: 20%;
+			left: 5%;
+
+			.learn-anytime-anywhere {
+				font-size: 25px;
+			}
+
+			.at-hapolearn {
+				font-size: 25px;
+				-webkit-text-stroke-width: 2px;
+			}
+
+			.description {
+				font-size: 15px;
+			}
+
+			.start-learning {
+				font-size: 15px;
+				padding: 15px 75px;
+			}
+		}
+	}
+
+	@media only screen and (min-width: 1200px) {
+		.header-banner-title {
+			position: absolute;
+			top: 20%;
+			left: 3%;
+
+			.at-hapolearn {
+				font-size: 50px;
+				-webkit-text-stroke-width: 2px;
+			}
+
+			.description {
+				font-size: 20px;
+				margin-bottom: 40px;
+			}
+
+			.start-learning {
+				font-size: 30px;
+				padding: 15px 75px;
+				-webkit-text-stroke-width: 1px;
+			}
+		}
+	}
+}
+
+.header-footer {
+	height: 150px;
+	background-color: $gray;
+
+	@media only screen and (max-width: 575.98px) {
+		height: 100px;
+	}
+	background: rgb(255, 255, 255);
+	background: linear-gradient(180deg, #fffbfb 20%, lightgray 100%);
+}

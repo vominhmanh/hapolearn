@@ -1,0 +1,72 @@
+.outstanding-session {
+  margin-top: -150px;
+  margin-bottom: 100px;
+}
+
+.courses-session {
+  .row {
+    margin-top: 50px;
+
+    > div {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.card {
+  height: 470px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px 1px gray;
+
+  .card-img {
+    height: 45%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    img {
+      max-width: 60%;
+    }
+  }
+
+  .card-title {
+    color: $light-green !important;
+    font-size: 30px;
+    font-weight: bolder;
+    -webkit-text-stroke-width: 1px;
+  }
+  .card-text {
+    white-space: wrap;
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .course-link {
+    margin-top: 22px;
+  }
+
+  .course-link-a {
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px 35px;
+    white-space: nowrap;
+    @media only screen and (max-width: 575.98px) {
+      display: inline-block;
+      width: 100%;
+      padding: 10px 0;
+      text-align: center;
+    }
+  }
+}
+
+.view-other-courses {
+  @media only screen and (max-width: 575.98px) {
+    font-size: 8vw !important;
+  }
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    font-size: 4vw !important;
+  }
+  @media only screen and (min-width: 1200px) {
+    font-size: 40px !important;
+  }
+  color: $light-green !important;
+}

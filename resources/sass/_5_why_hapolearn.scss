@@ -1,0 +1,109 @@
+.carousel-inner {
+  .background {
+    padding: 5% 0;
+  }
+
+  .decor {
+    color: white;
+    &.why-hapolearn {
+      font-weight: bolder;
+    }
+  }
+
+  @media only screen and (max-width: 575.98px) {
+    .background {
+      padding: 15% 0;
+      height: 750px;
+    }
+
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 80vw;
+        bottom: 5%;
+        left: 10%;
+      }
+
+      &.laptop-small {
+        width: 60vw;
+        top: -11%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 15%;
+        left: 40%;
+        font-size: 40px;
+        width: 50%;
+        line-height: 50px;
+      }
+
+      &.reason {
+        top: 40%;
+        left: 10%;
+        font-size: 13px;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 767.98px) {
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 40vw;
+        top: 45%;
+        left: 50%;
+      }
+
+      &.laptop-small {
+        width: 33vw;
+        top: -20%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 25%;
+        left: 30%;
+        font-size: 40px;
+      }
+
+      &.reason {
+        top: 52%;
+        left: 11%;
+        font-size: 1.2vw;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .decor {
+      position: absolute;
+
+      &.laptop-large {
+        width: 40vw;
+        top: 30%;
+        left: 55%;
+      }
+
+      &.laptop-small {
+        width: 33vw;
+        top: -20%;
+        left: 0%;
+      }
+
+      &.why-hapolearn {
+        top: 42%;
+        left: 8%;
+        font-size: 5.5vw;
+      }
+
+      &.reason {
+        top: 55%;
+        left: 10%;
+        font-size: 1.5vw;
+      }
+    }
+  }
+}

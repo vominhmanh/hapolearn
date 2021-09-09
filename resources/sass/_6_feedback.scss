@@ -1,0 +1,121 @@
+.feedback {
+  padding-bottom: 40px;
+
+  .feedback-description {
+    @media only screen and (min-width: 1024px) {
+      width: 60%;
+      font-size: 26px;
+    }
+
+    @media only screen and (max-width: 1023.98px) {
+      width: 100%;
+      font-size: 18px;
+    }
+  }
+
+  .feedback-list {
+    width: 90%;
+    margin: auto;
+  }
+
+  .comment {
+    border: 0.5px gray solid;
+    border-radius: 10px;
+    padding: 1.5em 1em;
+    box-shadow: 5px 10px 8px gray;
+
+    .comment-text {
+      padding: 1em;
+      margin: 0;
+      border-left: 5px gray solid;
+    }
+  }
+}
+
+.customer {
+  display: flex;
+
+  .customer-avatar {
+    height: 60px;
+    width: 60px;
+    margin-left: 11px;
+    border-radius: 50%;
+    background-color: $light-green;
+    .customer-avatar-img {
+      width: 100%;
+    }
+  }
+
+  .customer-name {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    color: $nearblack;
+    -webkit-text-stroke-width: 0.5px;
+  }
+
+  .customer-languge {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .customer-rate {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: $light-green;
+  }
+}
+
+.comment-div {
+  position: relative;
+  .comment {
+    border: 0.5px solid gray;
+    border-radius: 10px;
+    position: relative;
+  }
+
+  .comment:after,
+  .comment:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-style: solid;
+  }
+
+  .comment:after {
+    left: 30px;
+    border-color: white transparent transparent transparent;
+    border-width: 10px;
+  }
+
+  .comment:before {
+    left: 29px;
+    border-color: gray transparent transparent transparent;
+    border-width: 11px;
+  }
+}
+
+.slick-prev:before {
+  color: gray !important;
+  position: absolute !important;
+  right: -10px;
+  top: -180% !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+}
+
+.slick-next:before {
+  color: gray !important;
+  position: absolute !important;
+  right: 0 !important;
+  top: -180% !important;
+  font-size: 30px !important;
+  opacity: 1 !important;
+  z-index: 10 !important;
+}

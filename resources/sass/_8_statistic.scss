@@ -1,0 +1,37 @@
+.statistic {
+  padding: 5% 0;
+
+  &-detail {
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0;
+  }
+}
+
+.statistic-detail {
+  @media only screen and (max-width: 767.98px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: 1199.98px) {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+.statistic-detail-part {
+  padding: 0 0 40px 0;
+  font-size: 60px;
+
+  .statistic-subtitle {
+    font-weight: bold;
+  }
+
+  .statistic-number {
+    color: $light-green;
+    font-weight: bold;
+  }
+
+  @media only screen and (max-width: 1199.98px) {
+    font-size: 40px;
+  }
+}

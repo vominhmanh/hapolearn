@@ -1,0 +1,150 @@
+// Body
+$body-bg: #f8fafc;
+
+// Typography
+$font-family-sans-serif: 'Nunito', sans-serif;
+$font-size-base: 0.9rem;
+$line-height-base: 1.6;
+
+// Colors
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+
+@font-face {
+	font-family: "utm_bryantlgregular";
+	src: url("../fonts/UTM\ BryantLG.ttf");
+}
+
+@font-face {
+	font-family: "utm-bryantlg";
+	src: url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("woff"),
+		url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("opentype"),
+		url("https://candyfonts.com/wp-data/2018/10/26/11264/UTM_BryantLG.ttf") format("truetype");
+}
+
+$font_Open_Sans: "Open Sans", sans-serif;
+$opensans: "Open Sans", sans-serif;
+
+$utmbryantlg: "utm-bryantlg";
+$active-bg: #b2d235;
+$light-green: #b2d235;
+$gray: #eaebf0;
+$nearblack: #11114e;
+$dark: #505353;
+$whitesmoke: #f2f2f2;
+$darkred: #dc4e41;
+$darkblue: #3b5999;
+$quiteblack: #454545;
+$pretty--color-success: #b2d235;
+$simplewhite: #e2e2e2;
+
+$font_Open_Sans: "Open Sans", sans-serif;
+$font_UTM_BryantLG: "utm_bryantlgregular";
+
+@mixin opensans {
+	font-family: $opensans;
+	font-weight: 700px;
+	line-height: 19.07px;
+}
+
+@mixin utmbryantlg {
+	font-family: $utmbryantlg;
+	font-weight: 700px;
+	line-height: 19.07px;
+	color: $nearblack;
+}
+
+@mixin normal-link {
+	border-radius: 25px;
+	padding: 10px 20px !important;
+	color: $nearblack !important;
+}
+
+@mixin active-link {
+	background-color: $active-bg;
+	color: white !important;
+}
+
+@mixin active-link-mobile {
+	background-color: white !important;
+	color: $light-green !important;
+}
+
+.large-inset-shadow {
+	box-shadow: inset 0px 4px 4px gray;
+}
+
+.small-inset-shadow {
+	box-shadow: inset 0px 2px 2px gray;
+}
+
+.green-btn {
+	border-radius: 50px;
+	background-color: $active-bg;
+	color: white !important;
+	font-weight: bolder;
+}
+
+.hover-green-btn {
+	&:hover {
+		color: $nearblack !important;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+body {
+	font-family: $font_UTM_BryantLG;
+	letter-spacing: -0.05em;
+}
+
+.container-fixed {
+	max-width: 1200px;
+	margin: auto !important;
+	@media only screen and (max-width: 767.98px) {
+		width: 90% !important;
+	}
+}
+
+.title {
+	color: $nearblack;
+	width: -webkit-fit-content;
+	margin: auto;
+	@media only screen and (min-width: 1200px) {
+		font-size: 80px;
+	}
+	@media only screen and (max-width: 575.98px) {
+		font-size: 12vw !important;
+	}
+	@media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+		font-size: 12vw !important;
+	}
+	font-weight: bolder;
+	text-align: center;
+	-webkit-text-stroke-width: thin;
+}
+
+.title-underline {
+	border: 4px solid $active-bg;
+	border-radius: 10px;
+	margin-top: 0;
+}
+
+.input-custom {
+	background: $whitesmoke;
+	border: 1px solid white;
+	border-radius: 0;
+	height: 60px;
+
+	@media only screen and (max-width: 575.98px) {
+		font-size: 45px !important;
+	}
+}

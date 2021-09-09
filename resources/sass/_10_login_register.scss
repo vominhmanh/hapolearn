@@ -1,0 +1,165 @@
+.login-register-modal {
+  .border-modal-custom {
+    border-radius: 0;
+    position: relative;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: -11px;
+    right: -12px;
+    color: $light-green;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 30px;
+    opacity: 1;
+  }
+  .label-text-style {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .forgot-password-txt {
+    text-decoration: underline;
+    color: $nearblack;
+    float: right;
+    font-size: 18px;
+
+    &:hover {
+      color: $light-green;
+    }
+  }
+
+  .input-custom:focus {
+    border-color: gray;
+    box-shadow: 0 0 0 0.02rem grey;
+  }
+
+  .login-btn {
+    font-size: 18px;
+    padding: 10px 75px;
+    max-width: 100%;
+  }
+  .login-with-txt {
+    display: flex;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 8px;
+  }
+
+  .login-with-txt::before,
+  .login-with-txt::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid $active-bg;
+    margin-right: 0.25em;
+  }
+
+  .login-with-google,
+  .login-with-facebook {
+    width: 100%;
+    height: 55px;
+    font-weight: bold;
+    font-size: 19px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 2px;
+  }
+
+  .login-with-google {
+    background: $darkred;
+
+    &:hover {
+      background-color: red;
+    }
+  }
+
+  .login-with-facebook {
+    background: $darkblue;
+
+    &:hover {
+      background-color: blue;
+    }
+  }
+}
+
+.login-register-bar {
+  height: 70px;
+  background-color: white;
+  border-bottom: 1px solid $light-green;
+
+  .login-nav-tab,
+  .register-nav-tab {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    color: $light-green;
+
+    &.active {
+      background-color: $light-green;
+      color: white;
+      border: none;
+      border-radius: 0;
+      height: 100%;
+    }
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  .login-register-modal {
+    .border-modal-custom {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    .input-custom {
+      height: 45px;
+      font-size: 18px !important;
+      &:focus {
+        border-color: $whitesmoke !important;
+      }
+    }
+
+    .label-text-style {
+      font-size: 18px;
+    }
+
+    .remember-me-label {
+      font-size: 14px;
+    }
+
+    .forgot-password-txt {
+      font-size: 14px;
+    }
+
+    .login-with-google,
+    .login-with-facebook {
+      height: 45px;
+    }
+  }
+
+  .login-register-bar {
+    height: 60px;
+
+    .login-nav-tab,
+    .register-nav-tab {
+      font-size: 22px;
+      line-height: 41px;
+
+      &.active {
+        height: 60px;
+      }
+    }
+  }
+}

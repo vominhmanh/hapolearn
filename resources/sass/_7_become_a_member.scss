@@ -1,0 +1,86 @@
+.become-a-member-banner {
+  position: relative;
+
+  .banner-text {
+    background-image: url(../images/green_banner.png);
+    background-position: center;
+    background-size: cover;
+    padding: 10% 0;
+
+    .become-a-member-tilte {
+      font-weight: bolder;
+      letter-spacing: -0.02em;
+      color: white;
+      -webkit-text-stroke-width: thin;
+    }
+
+    .become-a-member-button {
+      background: white;
+      box-shadow: inset 0px 4px 4px gray;
+      border-radius: 35px;
+      font-weight: bold;
+      color: $light-green;
+
+      &:hover {
+        text-decoration: none;
+        color: $nearblack;
+      }
+    }
+  }
+  @media only screen and (max-width: 575.98px) {
+    .banner-text {
+      .become-a-member-tilte {
+        font-size: 23px;
+        margin: 0 10% 5% 10%;
+      }
+
+      .become-a-member-button {
+        padding: 2% 5%;
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  @media only screen and (min-width: 576px) and (max-width: 1199.98px) {
+    .banner-text {
+      .become-a-member-tilte {
+        font-size: 40px;
+        margin: 0 auto 50px auto;
+        width: 520px;
+      }
+
+      .become-a-member-button {
+        background: white;
+        box-shadow: inset 0px 4px 4px gray;
+        border-radius: 35px;
+        padding: 10px 40px;
+        font-weight: bold;
+        font-size: 30px;
+        color: $light-green;
+
+        &:hover {
+          text-decoration: none;
+          background-color: $light-green;
+          color: white;
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: 1200px) {
+    .banner-text {
+      .become-a-member-tilte {
+        font-size: 60px;
+        margin: 0 auto 50px auto;
+        width: 650px;
+        -webkit-text-stroke-width: thin;
+      }
+
+      .become-a-member-button {
+        border-radius: 35px;
+        padding: 10px 40px;
+        font-size: 30px;
+      }
+    }
+  }
+}

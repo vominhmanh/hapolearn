@@ -1,0 +1,131 @@
+header {
+	padding: 2vh 0;
+	background-color: white;
+	letter-spacing: 0;
+	font-size: 14px;
+	box-shadow: 0 0 10px 1px gray;
+}
+
+.navbar {
+	padding: 0;
+
+	@media (min-width: 576px) and (max-width: 767.98px) {
+		display: flex;
+		flex-direction: column;
+
+		.navbar-menu-div {
+			width: 80%;
+			.navbar-nav {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+
+	@media (min-width: 768px) and (max-width: 1199.98px) {
+		display: flex;
+		flex-direction: column;
+
+		.navbar-nav {
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+
+	a.navbar-brand {
+		@media only screen and (max-width: 575.98px) {
+			position: absolute;
+			top: -5px;
+			left: 25%;
+			width: 200px;
+		}
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.fixed {
+	@media only screen and (max-width: 575.98px) {
+		position: fixed;
+		z-index: 100;
+		width: 100%;
+		background-color: white;
+	}
+}
+
+.navbar-menu-div ul li {
+	@include opensans();
+	text-align: center;
+	padding: 0 5px;
+	line-height: 50px;
+
+	a {
+		display: inline;
+		padding: 8px 16px;
+		font-weight: bold;
+
+		&.active {
+			@include normal-link();
+			@include active-link();
+		}
+        &.danger-link {
+            color: red !important;
+        }
+        &.danger-link:hover {
+            background-color: red;
+            color: white !important;
+        }
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.navbar-menu-div {
+		display: flex;
+		justify-content: flex-end;
+		padding: 20px 0;
+
+		ul {
+			li {
+				padding: 0 5px;
+				a {
+					@include normal-link();
+				}
+				a:hover {
+					@include active-link();
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575.98px) {
+	.navbar-menu-div {
+		ul {
+			padding: 50px 0;
+
+			li {
+				height: 80px;
+				font-size: 20px;
+
+				&.align {
+					height: 60vh;
+				}
+
+				a.active {
+					@include active-link-mobile();
+				}
+			}
+		}
+	}
+}
+
+div.align {
+	height: 72px;
+}
+
+.expanding {
+	background-image: url("../images/times-solid.svg") !important;
+	opacity: 0.3;
+}
